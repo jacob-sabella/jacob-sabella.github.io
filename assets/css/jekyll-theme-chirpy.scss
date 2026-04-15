@@ -1,0 +1,236 @@
+---
+---
+
+@import 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* ============================================================
+   Retrowave / Light Cycle Grid overrides
+   Palette: hot pink, neon purple, deep black
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Share+Tech+Mono&display=swap');
+
+:root {
+  --rw-pink: #ff2bd6;
+  --rw-pink-bright: #ff6ad5;
+  --rw-purple: #a020f0;
+  --rw-purple-deep: #5a189a;
+  --rw-cyan: #00f0ff;
+  --rw-bg: #0a0014;
+  --rw-bg-2: #140024;
+  --rw-grid: rgba(255, 43, 214, 0.18);
+  --rw-grid-2: rgba(160, 32, 240, 0.12);
+}
+
+/* Dark scheme overrides -------------------------------------- */
+html[data-mode='dark'],
+html:not([data-mode]) {
+  --main-bg: var(--rw-bg);
+  --mask-bg: #1a0530;
+  --main-border-color: #2a0a4a;
+
+  --body-bg: var(--rw-bg);
+  --sidebar-bg: linear-gradient(180deg, #18002e 0%, #0a0014 100%);
+  --sidebar-border-color: rgba(255, 43, 214, 0.25);
+  --sidebar-muted-color: #b07dd6;
+  --sidebar-active-color: var(--rw-pink-bright);
+  --sidebar-hover-bg: rgba(255, 43, 214, 0.08);
+
+  --topbar-bg: rgba(10, 0, 20, 0.85);
+  --topbar-text-color: #f0c6ff;
+  --search-border-color: var(--rw-purple);
+  --search-icon-color: var(--rw-pink);
+  --input-focus-border-color: var(--rw-pink);
+
+  --text-color: #e8d4ff;
+  --text-muted-color: #b07dd6;
+  --heading-color: var(--rw-pink-bright);
+  --label-color: #d9a6ff;
+  --blockquote-border-color: var(--rw-purple);
+  --blockquote-text-color: #c8a8e8;
+  --link-color: var(--rw-pink);
+  --link-underline-color: var(--rw-purple);
+
+  --button-bg: #1a0530;
+  --btn-border-color: var(--rw-purple);
+  --btn-backtotop-color: var(--rw-pink);
+  --btn-backtotop-border-color: var(--rw-purple);
+
+  --card-bg: #12001f;
+  --card-hovor-bg: #1c0538;
+  --card-border-color: rgba(160, 32, 240, 0.35);
+  --card-box-shadow: 0 0 12px rgba(255, 43, 214, 0.15);
+
+  --tb-odd-bg: #12001f;
+  --tb-even-bg: #180030;
+  --tb-border-color: rgba(160, 32, 240, 0.3);
+
+  --tag-bg: #2a0a4a;
+  --tag-border: var(--rw-purple);
+  --tag-hover: var(--rw-pink);
+}
+
+/* Global body with the iconic light-cycle grid --------------- */
+body {
+  font-family: 'Share Tech Mono', 'Source Sans Pro', ui-monospace, monospace;
+  background-color: var(--rw-bg);
+  background-image:
+    linear-gradient(180deg, rgba(10, 0, 20, 0) 55%, rgba(10, 0, 20, 0.95) 92%),
+    linear-gradient(var(--rw-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--rw-grid) 1px, transparent 1px),
+    radial-gradient(ellipse at 50% 110%, var(--rw-purple-deep) 0%, transparent 55%),
+    linear-gradient(180deg, #1a0033 0%, #0a0014 70%);
+  background-size: 100% 100%, 48px 48px, 48px 48px, 100% 100%, 100% 100%;
+  background-position: 0 0, 0 0, 0 0, 0 0, 0 0;
+  background-attachment: fixed;
+}
+
+/* Headings: neon glow ---------------------------------------- */
+h1, h2, h3, h4, h5, h6,
+#post-list .card-wrapper .card h1.card-title,
+.post-content h1,
+.post-content h2,
+.post-content h3 {
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 0.04em;
+  color: var(--rw-pink-bright);
+  text-shadow:
+    0 0 4px rgba(255, 43, 214, 0.7),
+    0 0 12px rgba(255, 43, 214, 0.4),
+    0 0 22px rgba(160, 32, 240, 0.3);
+}
+
+h1 {
+  background: linear-gradient(90deg, var(--rw-pink) 0%, var(--rw-purple) 50%, var(--rw-cyan) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+  filter: drop-shadow(0 0 8px rgba(255, 43, 214, 0.45));
+}
+
+/* Links ------------------------------------------------------- */
+a {
+  text-decoration: none;
+  transition: color 0.15s ease, text-shadow 0.15s ease;
+}
+a:hover {
+  color: var(--rw-pink-bright) !important;
+  text-shadow: 0 0 8px rgba(255, 43, 214, 0.7);
+}
+
+/* Sidebar ----------------------------------------------------- */
+#sidebar {
+  border-right: 1px solid rgba(255, 43, 214, 0.25);
+  box-shadow: 0 0 24px rgba(160, 32, 240, 0.25) inset;
+}
+#sidebar .site-title a {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--rw-pink-bright) !important;
+  text-shadow: 0 0 10px rgba(255, 43, 214, 0.8), 0 0 24px rgba(160, 32, 240, 0.5);
+  letter-spacing: 0.08em;
+}
+#sidebar .site-subtitle {
+  color: var(--rw-cyan);
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.45);
+  font-family: 'Share Tech Mono', monospace;
+}
+#sidebar .nav-item .nav-link:hover {
+  background: rgba(255, 43, 214, 0.1);
+}
+#sidebar .nav-item.active .nav-link {
+  background: linear-gradient(90deg, rgba(255, 43, 214, 0.25), rgba(160, 32, 240, 0.1));
+  border-left: 3px solid var(--rw-pink);
+}
+
+/* Cards ------------------------------------------------------- */
+#post-list .card,
+.card {
+  border: 1px solid rgba(160, 32, 240, 0.35) !important;
+  background: linear-gradient(160deg, #14002a 0%, #0a0014 100%) !important;
+  transition: all 0.2s ease;
+}
+#post-list .card:hover,
+.card:hover {
+  border-color: var(--rw-pink) !important;
+  box-shadow:
+    0 0 18px rgba(255, 43, 214, 0.35),
+    0 0 40px rgba(160, 32, 240, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Code blocks ------------------------------------------------- */
+pre, code {
+  font-family: 'Share Tech Mono', monospace;
+}
+div.highlighter-rouge,
+figure.highlight {
+  border: 1px solid rgba(160, 32, 240, 0.4);
+  box-shadow: 0 0 12px rgba(255, 43, 214, 0.12);
+}
+
+/* Tags -------------------------------------------------------- */
+.post-tag {
+  background: rgba(90, 24, 154, 0.4) !important;
+  border: 1px solid var(--rw-purple) !important;
+  color: var(--rw-pink-bright) !important;
+  text-shadow: 0 0 4px rgba(255, 43, 214, 0.5);
+}
+.post-tag:hover {
+  background: rgba(255, 43, 214, 0.25) !important;
+  border-color: var(--rw-pink) !important;
+}
+
+/* Horizontal rules / dividers -------------------------------- */
+hr {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--rw-pink), var(--rw-purple), transparent);
+  box-shadow: 0 0 8px rgba(255, 43, 214, 0.5);
+}
+
+/* Blockquotes ------------------------------------------------- */
+blockquote {
+  border-left: 3px solid var(--rw-purple) !important;
+  background: linear-gradient(90deg, rgba(160, 32, 240, 0.08), transparent);
+  box-shadow: -3px 0 10px rgba(160, 32, 240, 0.3);
+}
+
+/* Scrollbar --------------------------------------------------- */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--rw-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--rw-pink), var(--rw-purple));
+  border-radius: 4px;
+  box-shadow: 0 0 6px rgba(255, 43, 214, 0.5);
+}
+
+/* Selection --------------------------------------------------- */
+::selection {
+  background: var(--rw-pink);
+  color: var(--rw-bg);
+  text-shadow: none;
+}
+
+/* Horizon glow strip on the bottom of the viewport ----------- */
+body::after {
+  content: '';
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--rw-pink), var(--rw-cyan), var(--rw-pink), transparent);
+  box-shadow: 0 0 18px var(--rw-pink), 0 0 40px var(--rw-purple);
+  pointer-events: none;
+  z-index: 9999;
+}
