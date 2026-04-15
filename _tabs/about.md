@@ -6,8 +6,16 @@ order: 4
 
 # Jacob Sabella
 
-## Software Engineer @ NISC
+Software Engineer at [NISC](https://www.nisc.coop/).
 
-Welcome to the grid.
+## At a glance
 
-This is my corner of the internet — a place for notes, projects, and the occasional deep dive. Thanks for stopping by.
+- **Role:** Software Engineer, NISC
+- **Location on the web:** [jacobsabella.com](https://jacobsabella.com) &middot; [github.com/jacob-sabella](https://github.com/jacob-sabella)
+- **Site:** Jekyll + [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy), deployed via GitHub Pages
+- **Aesthetic:** retrowave &mdash; pink, purple, black, light-cycle grid
+
+## Contact
+
+- Email: [jacobsabella@outlook.com](mailto:jacobsabella@outlook.com)
+- GitHub: [jacob-sabella](https://github.com/jacob-sabella)
