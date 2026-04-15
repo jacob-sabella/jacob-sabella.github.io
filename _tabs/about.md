@@ -6,16 +6,23 @@ order: 4
 
 # Jacob Sabella
 
-Software Engineer at [NISC](https://www.nisc.coop/).
+Software Engineer @ [NISC](https://www.nisc.coop/). St. Louis, MO.
 
-## At a glance
+## Elsewhere
 
-- **Role:** Software Engineer, NISC
-- **Location on the web:** [jacobsabella.com](https://jacobsabella.com) &middot; [github.com/jacob-sabella](https://github.com/jacob-sabella)
-- **Site:** Jekyll + [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy), deployed via GitHub Pages
-- **Aesthetic:** retrowave &mdash; pink, purple, black, light-cycle grid
+- GitHub — [jacob-sabella](https://github.com/jacob-sabella)
+- LinkedIn — [jacob-sabella](https://www.linkedin.com/in/jacob-sabella)
+- Email — [jacobsabella@outlook.com](mailto:jacobsabella@outlook.com)
 
-## Contact
+## Projects
 
-- Email: [jacobsabella@outlook.com](mailto:jacobsabella@outlook.com)
-- GitHub: [jacob-sabella](https://github.com/jacob-sabella)
+- **[fretscope](https://github.com/jacob-sabella/fretscope)** &middot; Rust
+  Real-time pitch and key detection with guitar fretboard visualization. VST3/CLAP plugin + standalone JACK/ALSA app.
+- **[lazygradle](https://github.com/jacob-sabella/lazygradle)** &middot; Python
+  Gradle TUI inspired by IntelliJ IDEA's Gradle tool panel.
+- **[gridwatch](https://github.com/jacob-sabella/gridwatch)** &middot; Go
+  Self-hosted multi-game esports TV guide.
+- **[sockbowl-game](https://github.com/jacob-sabella/sockbowl-game)** &middot; Java
+  Quizbowl implementation in Spring over STOMP/WebSockets. Companions: [sockbowl-questions](https://github.com/jacob-sabella/sockbowl-questions), [sockbowl-ng](https://github.com/jacob-sabella/sockbowl-ng), [sockbowl-docker](https://github.com/jacob-sabella/sockbowl-docker).
+- **[arch-config](https://github.com/jacob-sabella/arch-config)** &middot; Lua
+  Personal Arch Linux config and dotfiles.
