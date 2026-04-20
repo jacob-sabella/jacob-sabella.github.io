@@ -10,6 +10,10 @@ Things I've built in public. All MIT-licensed unless noted otherwise. Sources on
 **Rust · VST3/CLAP plugin + standalone app**
 Real-time pitch and key detection with a guitar-fretboard-first UI. McLeod pitch, Krumhansl-Schmuckler key detection. Linux / macOS / Windows.
 
+## [juballer](/projects/juballer/)
+**Rust · wgpu + egui**
+Utility platform for the GAMO2 FB9 USB 4×4 grid controller. 16 GPU-rendered tiles with per-cell shaders, out-of-process plugin host, live HTTP/WS editor, optional tap-rhythm mode over [memon](https://memon-spec.readthedocs.io/) charts.
+
 ## [Gridwatch](/projects/gridwatch/)
 **Go · self-hosted service**
 Multi-game esports TV guide. Polls Liquipedia (within their API ToU), exposes an EPG grid, JSON / iCal / XMLTV feeds, SSE live updates. Single ~14 MB static binary.
