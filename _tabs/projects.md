@@ -6,6 +6,14 @@ order: 1
 
 Things I've built in public. All MIT-licensed unless noted otherwise. Sources on [GitHub](https://github.com/jacob-sabella).
 
+## [NAM for MPC](/projects/nam-mpc/)
+**C++ · VST2 effect for Akai MPC OS**
+Neural Amp Modeler running natively on MPC standalone hardware. Amp/pedal captures plus cab IR, tone stack, gate, pitch, delay and reverb, a model browser, and in-plugin TONE3000 downloads. Runs Lite A2 captures at ~13% of one Cortex-A17 core.
+
+## [XMage Web Client](/projects/xmage-web/)
+**Java gateway · React + TypeScript**
+Browser UI for the XMage Magic: The Gathering engine. JVM gateway bridges JBoss Remoting to REST/WebSocket JSON; the React client covers the lobby, a 3D multiplayer board with UI for every in-game decision, and a deck editor.
+
 ## [Fretscope](/projects/fretscope/)
 **Rust · VST3/CLAP plugin + standalone app**
 Real-time pitch and key detection with a guitar-fretboard-first UI. McLeod pitch, Krumhansl-Schmuckler key detection. Linux / macOS / Windows.
