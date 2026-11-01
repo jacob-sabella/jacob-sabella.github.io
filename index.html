@@ -1,4 +1,32 @@
 ---
-layout: home
-# Index page
+layout: page
+title: Jacob Sabella
+permalink: /
 ---
+
+<p class="home-intro">
+  Software engineer at <a href="https://www.nisc.coop/">NISC</a> in St. Louis, MO. I build audio
+  tools, game clients and developer tooling in Rust, C++, Go, Java and TypeScript.
+</p>
+
+<p class="home-links">
+  <a href="https://github.com/jacob-sabella"><i class="fab fa-github"></i> GitHub</a>
+  <a href="https://www.linkedin.com/in/jacob-sabella"><i class="fab fa-linkedin"></i> LinkedIn</a>
+  <a href="mailto:jacobsabella@outlook.com"><i class="fas fa-envelope"></i> Email</a>
+</p>
+
+<h2>Featured projects</h2>
+
+<div class="project-grid">
+  {% for p in site.data.projects %}
+    {% if p.featured %}
+      <a class="project-card" href="{{ p.url | relative_url }}">
+        <span class="project-title">{{ p.title }}</span>
+        <span class="project-tag">{{ p.tag }}</span>
+        <span class="project-short">{{ p.short }}</span>
+      </a>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<p><a href="{{ '/projects/' | relative_url }}">All projects →</a></p>

@@ -1,0 +1,69 @@
+# Projects shown on the home page (featured: true) and on /projects/.
+# `short` is the one-liner for home cards, `summary` is the full blurb.
+
+- title: NAM for MPC
+  url: /projects/nam-mpc/
+  tag: C++ · VST2 effect for Akai MPC OS
+  featured: true
+  short: Neural Amp Modeler running natively on MPC standalone hardware.
+  summary: >-
+    Neural Amp Modeler running natively on MPC standalone hardware. Amp/pedal captures plus cab IR,
+    tone stack, gate, pitch, delay and reverb, a model browser, and in-plugin TONE3000 downloads.
+    Runs Lite A2 captures at ~13% of one Cortex-A17 core.
+
+- title: XMage Web Client
+  url: /projects/xmage-web/
+  tag: Java gateway · React + TypeScript
+  featured: true
+  short: A browser UI for the XMage Magic engine, with a 3D multiplayer board.
+  summary: >-
+    Browser UI for the XMage Magic: The Gathering engine. JVM gateway bridges JBoss Remoting to
+    REST/WebSocket JSON; the React client covers the lobby, a 3D multiplayer board with UI for every
+    in-game decision, and a deck editor.
+
+- title: Fretscope
+  url: /projects/fretscope/
+  tag: Rust · VST3/CLAP plugin + standalone app
+  featured: true
+  short: Real-time pitch and key detection with a guitar-fretboard-first UI.
+  summary: >-
+    Real-time pitch and key detection with a guitar-fretboard-first UI. McLeod pitch,
+    Krumhansl-Schmuckler key detection. Linux / macOS / Windows.
+
+- title: juballer
+  url: /projects/juballer/
+  tag: Rust · wgpu + egui
+  featured: true
+  short: Utility platform for the GAMO2 FB9 USB 4×4 grid controller.
+  summary: >-
+    Utility platform for the GAMO2 FB9 USB 4×4 grid controller. 16 GPU-rendered tiles with per-cell
+    shaders, out-of-process plugin host, live HTTP/WS editor, optional tap-rhythm mode over
+    [memon](https://memon-spec.readthedocs.io/) charts.
+
+- title: lazygradle
+  url: /projects/lazygradle/
+  tag: Python · Textual TUI
+  featured: true
+  short: Keyboard-driven Gradle task browser and runner, on PyPI.
+  summary: >-
+    Keyboard-driven Gradle task browser and runner. Multi-project cache, saved configs, task history,
+    vim-style output navigation. On [PyPI](https://pypi.org/project/lazygradle/).
+
+- title: Gridwatch
+  url: /projects/gridwatch/
+  tag: Go · self-hosted service
+  featured: false
+  short: Multi-game esports TV guide.
+  summary: >-
+    Multi-game esports TV guide. Polls Liquipedia (within their API ToU), exposes an EPG grid,
+    JSON / iCal / XMLTV feeds, SSE live updates. Single ~14 MB static binary.
+
+- title: Sockbowl
+  url: /projects/sockbowl/
+  tag: Multi-repo platform · Java, Angular, Docker
+  featured: false
+  short: Real-time multiplayer quizbowl over WebSockets.
+  summary: >-
+    Real-time multiplayer quizbowl over WebSockets. Spring Boot game backend, Neo4j-backed question
+    service with AI packet generation, Angular frontend, and a Docker Compose stack tying it all
+    together.

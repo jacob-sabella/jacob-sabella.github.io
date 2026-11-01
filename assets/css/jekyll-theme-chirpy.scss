@@ -234,3 +234,44 @@ body::after {
   pointer-events: none;
   z-index: 9999;
 }
+
+/* Home page --------------------------------------------------- */
+.home-intro {
+  font-size: 1.15rem;
+}
+.home-links a {
+  margin-right: 1.25rem;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1rem;
+  border: 1px solid rgba(160, 32, 240, 0.35);
+  border-radius: 6px;
+  background: linear-gradient(160deg, #14002a 0%, #0a0014 100%);
+  transition: all 0.2s ease;
+}
+.project-card:hover {
+  border-color: var(--rw-pink);
+  box-shadow: 0 0 18px rgba(255, 43, 214, 0.35), 0 0 40px rgba(160, 32, 240, 0.2);
+  transform: translateY(-2px);
+}
+.project-title {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--rw-pink-bright);
+}
+.project-tag {
+  font-size: 0.8rem;
+  color: var(--rw-cyan);
+}
+.project-short {
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
